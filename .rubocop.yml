@@ -9,6 +9,7 @@ AllCops:
     - "node_modules/*/"
     - "spec/rails_helper.rb"
     - "app/helpers/users_helper.rb"
+    - ".rspec"
 
   DisplayCopNames: true
 
