@@ -4,6 +4,7 @@ class CreateReadings < ActiveRecord::Migration[6.0]
       t.float :fasting, null: false
       t.float :after_meal, null: false
       t.float :bp, null: false
+      t.string :user_email, foreign_key: true
       t.datetime :date, null: false
 
       t.timestamps

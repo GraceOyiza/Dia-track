@@ -19,14 +19,14 @@ ActiveRecord::Schema.define(version: 2021_09_18_204414) do
     t.float "fasting", null: false
     t.float "after_meal", null: false
     t.float "bp", null: false
+    t.string "user_email"
     t.datetime "date", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", primary_key: "email", id: :string, force: :cascade do |t|
     t.string "username"
-    t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
