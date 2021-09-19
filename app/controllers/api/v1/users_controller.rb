@@ -1,4 +1,4 @@
-  class UsersController < SecuredController
+  class Api::V1::UsersController < SecuredController
     # skip_before_action :authorize_request, only: [:create]
     def create
       @user = User.find_by(email: params[:email])

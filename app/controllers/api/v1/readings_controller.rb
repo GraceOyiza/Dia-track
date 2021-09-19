@@ -1,4 +1,4 @@
-class ReadingsController < SecuredController
+class Api::V1::ReadingsController < SecuredController
     def index
       @user = User.includes(:readings).find(params[:email])
       render json: @user.readings, status: :ok
