@@ -1,4 +1,9 @@
 class ReadingsController < SecuredController
+    def index
+      @user = User.includes(:readings).find(params[:email])
+      render json: @user.readings, status: :ok
+      
+    end
 
     def create
       new_reading = Reading.create!(reading_params)

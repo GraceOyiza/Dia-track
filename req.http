@@ -1,11 +1,11 @@
 
 
-POST http://localhost:3000/readings
+GET http://localhost:3000/readings
 Content-Type: application/json
 Authorization: = 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklSWlZ1V0hoQ015ZU5NNUhuaFoyVyJ9.eyJpc3MiOiJodHRwczovL2Rldi00OXJ1dHVoZy51cy5hdXRoMC5jb20vIiwic3ViIjoiNjU5aUJkVnN5c3lmbXFrZWNNSVV3eE5rdTdjOE1IUjlAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vcmFpbHMtc2VjdXJlLWFwaSIsImlhdCI6MTYzMjA4NDA0NCwiZXhwIjoxNjMyMTcwNDQ0LCJhenAiOiI2NTlpQmRWc3lzeWZtcWtlY01JVXd4Tmt1N2M4TUhSOSIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.cntR1Ni5hZ9FRjiqO0FOLgyqMyiElfiKSnk6vASSLBUWgZ8sB_HIj1AcEPb8LPHzkp96PJaE2Nj90pytrZEch9cjff2hcnUFxtXDT6mLQZf3bMTzA-VmyGzZGpHQhAkJeKz7RVuqIQh4VGioRJ6Qbw2O3zm9PMp_9n0APs8J2sYgLNJVh5AC5JuOFKVPzpDAEOLcLk2FMdRgsKtA-j-wO1fmV-x02wCnQdImVdQw37x7nxItgvLRvFWftc9_CcrSEqeLIbp7zOdPTdGRu0J03bFGDEJuaRWdavk9IZ_faO3vgaC_toQuW5in7-rA57C0l-dVnaeREHCD42spMcNUAw'
 
 {
-   "user_email": "strongwoman@oondoo.com",
+   "email": "strongwoman@oondoo.com",
    "fasting": 120.23,
    "after_meal": 90.34,
    "bp": 123.22,
