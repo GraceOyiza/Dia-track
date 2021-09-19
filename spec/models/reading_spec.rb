@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Reading, type: :model do
- describe 'Association' do
+  describe 'Association' do
     it { should belong_to(:user) }
   end
 

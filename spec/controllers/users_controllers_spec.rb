@@ -28,4 +28,11 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       it { expect(response).to have_http_status(:not_found) }
     end
   end
+
+  describe 'Should create a new user' do
+    before { post :create, params: { username: 'mike', email: 'mike@mike.com' } }
+    context 'when authorized' do
+      it { expect(response).to have_http_status(:created) }
+    end
+  end
 end
